@@ -3,7 +3,7 @@ import { styled as materialStyled } from "@mui/material/styles";
 
 const CustomButton = materialStyled(LoadingButton)(({ theme }) => ({
   borderRadius: "50px",
-  padding: "12px",
+  padding: "100px",
   textAlign: "center",
   textTransform: "none",
   fontFamily: "Satoshi",
