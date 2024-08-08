@@ -1,0 +1,23 @@
+{
+  "name": "common-components",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.tsx",
+  "scripts": {
+    "test": "npm run test:dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Thushan97/common-components.git"
+  },
+  "author": "Thushan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Thushan97/common-components/issues"
+  },
+  "homepage": "https://github.com/Thushan97/common-components#readme",
+  "dependencies": {
+    "@mui/lab": "^5.0.0-alpha.173",
+    "@mui/material": "^5.16.6"
+  }
+}
