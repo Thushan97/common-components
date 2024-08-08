@@ -2,7 +2,7 @@ import LoadingButton from "@mui/lab/LoadingButton";
 import { styled as materialStyled } from "@mui/material/styles";
 
 const CustomButton = materialStyled(LoadingButton)(({ theme }) => ({
-  borderRadius: "4px",
+  borderRadius: "50px",
   padding: "12px",
   textAlign: "center",
   textTransform: "none",
