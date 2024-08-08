@@ -11,7 +11,7 @@ const CustomButton = materialStyled(LoadingButton)(({ theme }) => ({
   fontStyle: "normal",
   fontWeight: 500,
   lineHeight: "normal",
-  height: "38px",
+  height: "50px",
   "&:disabled": {
     backgroundColor: theme.palette.action.disabledBackground, // Disabled button color
     color: theme.palette.white.main, // Disabled text color
