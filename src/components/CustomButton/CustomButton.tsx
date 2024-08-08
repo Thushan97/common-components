@@ -1,30 +1,23 @@
-import LoadingButton from '@mui/lab/LoadingButton';
-import { styled as materialStyled } from '@mui/material/styles';
-import { theme } from '../../theme/theme';
+import LoadingButton from "@mui/lab/LoadingButton";
+import { styled as materialStyled } from "@mui/material/styles";
 
-type ICustomButtonProps = {
-  padding?: string;
-  radius?: string;
-  height?: string;
-};
-
-const CustomButton = materialStyled(LoadingButton)<ICustomButtonProps>(
-  ({ padding = '12px', radius = '4px', height = '38px' }) => ({
+const CustomButton = materialStyled(LoadingButton)(
+  ({ padding = "12px", radius = "4px", height = "38px", theme }) => ({
     borderRadius: radius,
     padding,
-    textAlign: 'center',
-    textTransform: 'none',
-    fontFamily: 'Satoshi',
+    textAlign: "center",
+    textTransform: "none",
+    fontFamily: "Satoshi",
     fontSize: 16,
-    fontStyle: 'normal',
+    fontStyle: "normal",
     fontWeight: 500,
-    lineHeight: 'normal',
+    lineHeight: "normal",
     height,
-    '&:disabled': {
+    "&:disabled": {
       backgroundColor: theme.palette.action.disabledBackground, // Disabled button color
       color: theme.palette.white.main, // Disabled text color
     },
-  }),
+  })
 );
 
 export default CustomButton;
