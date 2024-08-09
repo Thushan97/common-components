@@ -4,8 +4,8 @@ import IconButton from "@mui/material/IconButton";
 import Box from "@mui/material/Box";
 import CustomTextField from "../CustomTextField/CustomTextField";
 import { theme } from "../../theme/theme";
-import VisibilitySvg from "../../assets/visibility.svg";
-import VisibilityOffSvg from "../../assets/visibility-off.svg";
+import { ReactComponent as VisibilitySvg } from "../../assets/visibility.svg";
+import { ReactComponent as VisibilityOffSvg } from "../../assets/visibility-off.svg";
 
 export type ICustomPasswordFieldProps = {
   showPassword: boolean;
@@ -60,9 +60,9 @@ function CustomPasswordField({
               role="button"
             >
               {showPassword ? (
-                <Box component="img" src={VisibilityOffSvg} />
+                <Box component={VisibilityOffSvg} />
               ) : (
-                <Box component="img" src={VisibilitySvg} />
+                <Box component={VisibilitySvg} />
               )}
             </IconButton>
           </InputAdornment>
