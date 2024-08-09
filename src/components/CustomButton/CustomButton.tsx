@@ -9,7 +9,7 @@ type ICustomButtonProps = {
 };
 
 const CustomButton = materialStyled(LoadingButton)<ICustomButtonProps>(
-  ({ padding = "12px", radius = "4px", height = "38px" }) => ({
+  ({ padding = "12px", radius = "4px", height = "38px", theme }) => ({
     borderRadius: radius,
     padding,
     textAlign: "center",
@@ -20,7 +20,6 @@ const CustomButton = materialStyled(LoadingButton)<ICustomButtonProps>(
     fontWeight: 500,
     lineHeight: "normal",
     height,
-    color: theme.palette.primary.main,
     "&:disabled": {
       backgroundColor: theme.palette.action.disabledBackground, // Disabled button color
       color: theme.palette.white.main, // Disabled text color
