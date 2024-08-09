@@ -5,7 +5,7 @@ import GreenCheckCircleSVG from "../../assets/solar-check-circle-bold.svg";
 import CustomContainerBox from "../CustomContainerBox/CustomContainerBox";
 import CustomButton from "../CustomButton/CustomButton";
 
-type IConfirmationMessageProps = {
+export type IConfirmationMessageProps = {
   title: string;
   description: string;
   button: string;

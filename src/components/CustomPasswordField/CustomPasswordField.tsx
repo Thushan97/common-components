@@ -7,7 +7,7 @@ import { theme } from "../../theme/theme";
 import VisibilitySvg from "../../assets/visibility.svg";
 import VisibilityOffSvg from "../../assets/visibility-off.svg";
 
-type ICustomPasswordFieldProps = {
+export type ICustomPasswordFieldProps = {
   showPassword: boolean;
   setShowPassword: (_showPassword: boolean) => void;
   value: string;
