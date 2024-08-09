@@ -20,7 +20,6 @@ const CustomButton = materialStyled(LoadingButton)<ICustomButtonProps>(
     fontWeight: 500,
     lineHeight: "normal",
     height,
-    backgroundColor: theme.palette.primary.main,
     "&:disabled": {
       backgroundColor: theme.palette.action.disabledBackground, // Disabled button color
       color: theme.palette.white.main, // Disabled text color
