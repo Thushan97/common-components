@@ -4,8 +4,8 @@ import IconButton from "@mui/material/IconButton";
 import Box from "@mui/material/Box";
 import CustomTextField from "../CustomTextField/CustomTextField";
 import { theme } from "../../theme/theme";
-import VisibilitySvg from "../../assets/img/visibility.svg";
-import VisibilityOffSvg from "../../assets/img/visibility-off.svg";
+import VisibilitySvg from "../../assets/visibility.svg";
+import VisibilityOffSvg from "../../assets/visibility-off.svg";
 
 type ICustomPasswordFieldProps = {
   showPassword: boolean;

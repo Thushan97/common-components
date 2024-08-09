@@ -3,10 +3,10 @@ import ToggleButton from "@mui/material/ToggleButton";
 import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
 import Box from "@mui/material/Box";
 import { styled as materialStyled } from "@mui/material/styles";
-import GridViewBoldSvg from "../../assets/img/grid-view-bold.svg";
-import GridViewLinearSvg from "../../assets/img/grid-view-linear.svg";
-import LeftToRightListDashBoldSvg from "../../assets/img/left-to-right-list-dash-bold.svg";
-import LeftToRightListDashLinearSvg from "../../assets/img/left-to-right-list-dash-linear.svg";
+import GridViewBoldSvg from "../../assets/grid-view-bold.svg";
+import GridViewLinearSvg from "../../assets/grid-view-linear.svg";
+import LeftToRightListDashBoldSvg from "../../assets/left-to-right-list-dash-bold.svg";
+import LeftToRightListDashLinearSvg from "../../assets/left-to-right-list-dash-linear.svg";
 import { ViewType } from "../../enums/view-type.enum";
 import { theme } from "../../theme/theme";
 

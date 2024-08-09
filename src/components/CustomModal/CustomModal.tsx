@@ -6,7 +6,7 @@ import Typography from "@mui/material/Typography";
 import Dialog from "@mui/material/Dialog";
 import IconButton from "@mui/material/IconButton";
 import { styled as materialStyled } from "@mui/material/styles";
-import CloseCircleBoldSVG from "../../assets/img/close-circle-bold.svg";
+import CloseCircleBoldSVG from "../../assets/close-circle-bold.svg";
 import CustomContainerBox from "../CustomContainerBox/CustomContainerBox";
 
 type CustomModalProps = {
