@@ -24,7 +24,13 @@ function ConfirmationMessage({
 
   return (
     <CustomContainerBox>
-      <Box component={GreenCheckCircleSVG} display="flex" margin="auto" />
+      <Box
+        component={GreenCheckCircleSVG}
+        display="flex"
+        margin="auto"
+        width={56}
+        height={56}
+      />
       <Box display="flex" flexDirection="column" gap={2}>
         <Typography
           variant="title3Bold"

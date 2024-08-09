@@ -6,8 +6,8 @@ import Typography from "@mui/material/Typography";
 import Dialog from "@mui/material/Dialog";
 import IconButton from "@mui/material/IconButton";
 import { styled as materialStyled } from "@mui/material/styles";
-import CloseCircleBoldSVG from "../../assets/close-circle-bold.svg";
 import CustomContainerBox from "../CustomContainerBox/CustomContainerBox";
+import { ReactComponent as CloseCircleBoldSVG } from "../../assets/close-circle-bold.svg";
 
 type CustomModalProps = {
   modal?: boolean;
@@ -92,7 +92,7 @@ export function CustomModal({
             {title}
           </Typography>
           <IconButton size="small" aria-label="close" onClick={topCloseBtn}>
-            <Box component="img" src={CloseCircleBoldSVG} />
+            <Box component={CloseCircleBoldSVG} width={36} height={36} />
           </IconButton>
         </Box>
       )}
@@ -107,7 +107,7 @@ export function CustomModal({
             {title}
           </Typography>
           <IconButton size="small" aria-label="close" onClick={topCloseBtn}>
-            <Box component="img" src={CloseCircleBoldSVG} />
+            <Box component={CloseCircleBoldSVG} width={36} height={36} />
           </IconButton>
         </Box>
       )}
