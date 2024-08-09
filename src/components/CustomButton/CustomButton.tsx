@@ -2,11 +2,11 @@ import LoadingButton from "@mui/lab/LoadingButton";
 import { styled as materialStyled } from "@mui/material/styles";
 import { theme } from "../../theme/theme";
 
-interface ICustomButtonProps {
+type ICustomButtonProps = {
   padding?: string;
   radius?: string;
   height?: string;
-}
+};
 
 const CustomButton = materialStyled(LoadingButton)<ICustomButtonProps>(
   ({ padding = "12px", radius = "4px", height = "38px" }) => ({

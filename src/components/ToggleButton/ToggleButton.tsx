@@ -33,7 +33,10 @@ const StyledToggleButton = materialStyled(ToggleButton)(() => ({
 export default function ToggleButtons() {
   const [view, setView] = React.useState<string | null>("list");
 
-  const handleView = (newView: string | null) => {
+  const handleView = (
+    event: React.MouseEvent<HTMLElement>,
+    newView: string | null
+  ) => {
     setView(newView);
   };
 

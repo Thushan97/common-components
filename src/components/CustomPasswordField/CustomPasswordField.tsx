@@ -7,7 +7,7 @@ import { theme } from "../../theme/theme";
 import VisibilitySvg from "../../assets/img/visibility.svg";
 import VisibilityOffSvg from "../../assets/img/visibility-off.svg";
 
-interface ICustomPasswordFieldProps {
+type ICustomPasswordFieldProps = {
   showPassword: boolean;
   setShowPassword: (_showPassword: boolean) => void;
   value: string;
@@ -19,7 +19,7 @@ interface ICustomPasswordFieldProps {
   helperText: string | undefined | boolean;
   name: string;
   id: string;
-}
+};
 
 function CustomPasswordField({
   showPassword,
