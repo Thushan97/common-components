@@ -1,3 +1,3 @@
-import CustomButton from "./src/components/CustomButton/CustomButton";
+import CustomMenuItem from "./src/components/CustomMenuItem/CustomMenuItem";
 
-export default CustomButton;
+export default CustomMenuItem;
