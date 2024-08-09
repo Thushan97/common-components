@@ -1,23 +1,25 @@
-import React, { ChangeEvent, FocusEvent } from 'react';
-import InputAdornment from '@mui/material/InputAdornment';
-import IconButton from '@mui/material/IconButton';
-import Box from '@mui/material/Box';
-import CustomTextField from '../CustomTextField/CustomTextField';
-import { theme } from '../../theme/theme';
-import VisibilitySvg from '../../assets/img/visibility.svg';
-import VisibilityOffSvg from '../../assets/img/visibility-off.svg';
+import React, { ChangeEvent, FocusEvent } from "react";
+import InputAdornment from "@mui/material/InputAdornment";
+import IconButton from "@mui/material/IconButton";
+import Box from "@mui/material/Box";
+import CustomTextField from "../CustomTextField/CustomTextField";
+import { theme } from "../../theme/theme";
+import VisibilitySvg from "../../assets/img/visibility.svg";
+import VisibilityOffSvg from "../../assets/img/visibility-off.svg";
 
-type ICustomPasswordFieldProps = {
+interface ICustomPasswordFieldProps {
   showPassword: boolean;
   setShowPassword: (_showPassword: boolean) => void;
   value: string;
-  onChange: (_event: ChangeEvent<HTMLTextAreaElement | HTMLInputElement>) => void;
+  onChange: (
+    _event: ChangeEvent<HTMLTextAreaElement | HTMLInputElement>
+  ) => void;
   onBlur: (_event: FocusEvent<HTMLInputElement | HTMLTextAreaElement>) => void;
   error: boolean | undefined;
   helperText: string | undefined | boolean;
   name: string;
   id: string;
-};
+}
 
 function CustomPasswordField({
   showPassword,
@@ -30,7 +32,7 @@ function CustomPasswordField({
   name,
   id,
 }: ICustomPasswordFieldProps) {
-  const passwordFieldType = showPassword ? 'text' : 'password';
+  const passwordFieldType = showPassword ? "text" : "password";
   return (
     <CustomTextField
       id={id}
@@ -43,14 +45,18 @@ function CustomPasswordField({
       error={error}
       helperText={helperText}
       variant="outlined"
-      FormHelperTextProps={{ style: { ...theme.typography.meta, marginLeft: 0 } }}
+      FormHelperTextProps={{
+        style: { ...theme.typography.meta, marginLeft: 0 },
+      }}
       InputProps={{
         endAdornment: (
           <InputAdornment position="end">
             <IconButton
               aria-label="toggle password visibility"
               onClick={() => setShowPassword(!showPassword)}
-              onMouseLeave={(event: React.MouseEvent<HTMLButtonElement>) => event.preventDefault()}
+              onMouseLeave={(event: React.MouseEvent<HTMLButtonElement>) =>
+                event.preventDefault()
+              }
               role="button"
             >
               {showPassword ? (

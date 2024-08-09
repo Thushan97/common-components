@@ -5,12 +5,12 @@ import GreenCheckCircleSVG from "../../assets/img/solar-check-circle-bold.svg";
 import CustomContainerBox from "../CustomContainerBox/CustomContainerBox";
 import CustomButton from "../CustomButton/CustomButton";
 
-type IConfirmationMessageProps = {
+interface IConfirmationMessageProps {
   title: string;
   description: string;
   button: string;
   onClick: () => void;
-};
+}
 
 function ConfirmationMessage({
   title,
