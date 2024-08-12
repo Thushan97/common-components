@@ -1,7 +1,7 @@
 import React from "react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
-import { ReactComponent as GreenCheckCircleSVG } from "../../assets/solar-check-circle-bold.svg";
+import GreenCheckCircleSVG from "../../assets/solar-check-circle-bold.svg";
 import CustomContainerBox from "../CustomContainerBox/CustomContainerBox";
 import CustomButton from "../CustomButton/CustomButton";
 
@@ -24,7 +24,7 @@ function ConfirmationMessage({
 
   return (
     <CustomContainerBox>
-      <Box component={GreenCheckCircleSVG} />
+      <Box component="img" src={GreenCheckCircleSVG} />
       <Box display="flex" flexDirection="column" gap={2}>
         <Typography
           variant="title3Bold"

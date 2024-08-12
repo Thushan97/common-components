@@ -3,10 +3,10 @@ import ToggleButton from "@mui/material/ToggleButton";
 import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
 import Box from "@mui/material/Box";
 import { styled as materialStyled } from "@mui/material/styles";
-import { ReactComponent as GridViewBoldSvg } from "../../assets/grid-view-bold.svg";
-import { ReactComponent as GridViewLinearSvg } from "../../assets/grid-view-linear.svg";
-import { ReactComponent as LeftToRightListDashBoldSvg } from "../../assets/left-to-right-list-dash-bold.svg";
-import { ReactComponent as LeftToRightListDashLinearSvg } from "../../assets/left-to-right-list-dash-linear.svg";
+import GridViewBoldSvg from "../../assets/grid-view-bold.svg";
+import GridViewLinearSvg from "../../assets/grid-view-linear.svg";
+import LeftToRightListDashBoldSvg from "../../assets/left-to-right-list-dash-bold.svg";
+import LeftToRightListDashLinearSvg from "../../assets/left-to-right-list-dash-linear.svg";
 import { ViewType } from "../../enums/view-type.enum";
 import { theme } from "../../theme/theme";
 
@@ -49,16 +49,16 @@ export default function ToggleButtons() {
     >
       <StyledToggleButton value="list" aria-label="left aligned">
         {view === ViewType.LIST ? (
-          <Box component={LeftToRightListDashBoldSvg} />
+          <Box component="img" src={LeftToRightListDashBoldSvg} />
         ) : (
-          <Box component={LeftToRightListDashLinearSvg} />
+          <Box component="img" src={LeftToRightListDashLinearSvg} />
         )}
       </StyledToggleButton>
       <StyledToggleButton value="grid" aria-label="centered">
         {view === ViewType.GRID ? (
-          <Box component={GridViewBoldSvg} />
+          <Box component="img" src={GridViewBoldSvg} />
         ) : (
-          <Box component={GridViewLinearSvg} />
+          <Box component="img" src={GridViewLinearSvg} />
         )}
       </StyledToggleButton>
     </StyledToggleButtonGroup>

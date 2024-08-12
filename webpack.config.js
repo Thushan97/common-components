@@ -35,7 +35,6 @@ module.exports = {
               icon: false,
             },
           },
-          "file-loader",
         ],
       },
     ],
