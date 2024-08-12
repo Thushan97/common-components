@@ -49,17 +49,13 @@ export default function ToggleButtons() {
     >
       <StyledToggleButton value="list" aria-label="left aligned">
         {view === ViewType.LIST ? (
-          <Box component="img" src={LeftToRightListDashBoldSvg} />
+          <LeftToRightListDashBoldSvg />
         ) : (
-          <Box component="img" src={LeftToRightListDashLinearSvg} />
+          <LeftToRightListDashLinearSvg />
         )}
       </StyledToggleButton>
       <StyledToggleButton value="grid" aria-label="centered">
-        {view === ViewType.GRID ? (
-          <Box component="img" src={GridViewBoldSvg} />
-        ) : (
-          <Box component="img" src={GridViewLinearSvg} />
-        )}
+        {view === ViewType.GRID ? <GridViewBoldSvg /> : <GridViewLinearSvg />}
       </StyledToggleButton>
     </StyledToggleButtonGroup>
   );

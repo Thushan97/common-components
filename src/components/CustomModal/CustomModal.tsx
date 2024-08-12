@@ -92,7 +92,7 @@ export function CustomModal({
             {title}
           </Typography>
           <IconButton size="small" aria-label="close" onClick={topCloseBtn}>
-            <Box component="img" src={CloseCircleBoldSVG} />
+            <CloseCircleBoldSVG />
           </IconButton>
         </Box>
       )}
@@ -107,7 +107,7 @@ export function CustomModal({
             {title}
           </Typography>
           <IconButton size="small" aria-label="close" onClick={topCloseBtn}>
-            <Box component="img" src={CloseCircleBoldSVG} />
+            <CloseCircleBoldSVG />
           </IconButton>
         </Box>
       )}
