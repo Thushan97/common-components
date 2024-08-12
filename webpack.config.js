@@ -32,10 +32,9 @@ module.exports = {
           {
             loader: "@svgr/webpack",
             options: {
-              icon: true,
+              icon: false,
             },
           },
-          "file-loader",
         ],
       },
     ],

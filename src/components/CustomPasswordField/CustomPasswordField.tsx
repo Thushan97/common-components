@@ -60,9 +60,9 @@ function CustomPasswordField({
               role="button"
             >
               {showPassword ? (
-                <Box component={VisibilityOffSvg} width={24} height={24} />
+                <Box component={VisibilityOffSvg} />
               ) : (
-                <Box component={VisibilitySvg} width={22} height={16} />
+                <Box component={VisibilitySvg} />
               )}
             </IconButton>
           </InputAdornment>
